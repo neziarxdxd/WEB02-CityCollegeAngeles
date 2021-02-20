@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    var cartForParty = {  
+    banana: "1.25",
+    handkerchief: ".99",
+    Tshirt: "25.01",
+    apple: "0.60",
+    nalgene: "10.34",
+    proteinShake: "22.36"
+    };
+    function cashRegister(cart){
+        var item = Object.keys(cart); 
+        var totalSum = 0;   
+        for (var i = 0; i < item.length; i++) {
+            var itemName = item[i];
+            var itemPrice = cart[itemName]; 
+            totalSum += Number.parseFloat(itemPrice); 
+        }
+    return totalSum;
+    }
+    console.log(cashRegister(cartForParty));
+</script>

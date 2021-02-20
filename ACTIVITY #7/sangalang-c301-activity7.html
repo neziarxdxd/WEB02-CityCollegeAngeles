@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Create an array of objects, where each object describes a book and has properties for the title
+(a string), author (a string), and alreadyRead (a boolean indicating if you read it yet).
+Iterate through the array of books. For each book, log the book title and book author like so: 
+"The Hobbit by J.R.R. Tolkien".
+Now use an if/else statement to change the output depending on whether you read it yet or not.
+If you read it, log a string like 'You already read "The Hobbit" by J.R.R. Tolkien', and if not,
+log a string like 'You still need to read "The Lord of the Rings" by J.R.R. Tolkien.'
+    -->
+</body>
+</html>
+<script>
+    
+ 
+ 
+
+
+books = [
+        {
+            title:"The Hobbit",
+            author: "J.R.R Tolkien",
+            alreadyRead: true
+        },
+        {
+            title:"Pride and Prejudice",
+            author: "Jane Austen",
+            alreadyRead: false
+        },
+        {
+            title:"The Red and the Black",
+            author: "Stendhal",
+            alreadyRead: true
+        },
+        {
+            title:"Le Père Goriot",
+            author: "Honoré de Balzac",
+            alreadyRead: false
+        },
+        {
+            title:"David Copperfield",
+            author: "Charles Dickens",
+            alreadyRead: true
+        }    
+    ]
+
+    for (var i=0; i<books.length; i++){
+        var read
+        if (books[i].alreadyRead){
+            read = "You already read";
+        }
+        else{
+            read = "You still need to read";
+        }
+        console.log(`${read} "${books[i].title}" by ${books[i].author}`);
+    }
+</script>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    function calculateSupply(currentAge, maxAge, numPerDay,food){
+    var total = (numPerDay * 365) * (maxAge - currentAge);
+    console.log(`You will need ${total} cups of ${food} to last you until the ripe old age of ${maxAge}`);    
+    }
+
+    calculateSupply(50,90,3,"coffee");
+    calculateSupply(10,80,2,"chocolate drink");
+    calculateSupply(20,65,1,"tea");
+    
+</script>
