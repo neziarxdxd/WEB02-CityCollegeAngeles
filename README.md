@@ -1,1 +1,1 @@
-# cca-web
+# assignment collections
